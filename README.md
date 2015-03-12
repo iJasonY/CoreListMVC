@@ -29,14 +29,14 @@
 ####使用步骤：
  
  1.UITableViewMVC的集成：<br />
->（1）控制器：  建立控制器，继承自CoreLTVC，建立LTConfigModel模型并传递。<br />
->（2）视图：    建立视图cell，继承自LTCell，重写+(instancetype)cellPrepare方法，创建cell（父类默认从同名Nib创建，也可自行使用代码创建，注意cell从nib创建，nib中需要指定和类名相同的rid。）。<br />
->（3）模型：    继承通用模型，继承自CoreListCommonModel：重写+(NSArray *)modelPrepare:方法，解析并返回列表的字典数组。<br />
+>（1）控制器：  建立控制器，继承自CoreLTVC，建立LTConfigModel模型并传递。<br /><br />
+>（2）视图：    建立视图cell，继承自LTCell，重写+(instancetype)cellPrepare方法，创建cell（父类默认从同名Nib创建，也可自行使用代码创建，注意cell从nib创建，nib中需要指定和类名相同的rid。）。<br /><br />
+>（3）模型：    继承通用模型，继承自CoreListCommonModel：重写+(NSArray *)modelPrepare:方法，解析并返回列表的字典数组。<br /><br />
  
  2.UICollectionViewMVC的集成：<br />
->（1）控制器：  建立控制器，继承自CoreLCVC，控制器内部建立UICollectionViewFlowLayout及LTConfigModel模型并传递。<br />
->（2）视图cell：建立cell，继承自LCCell，内部实现-(void)dataFill即可。（注意cell从nib创建，nib中需要指定和类名相同的rid。）<br />
->（3）模型：    建立模型，继承自CoreListCommonModel，重写+(NSArray *)modelPrepare:方法，解析并返回列表的字典数组。<br />
+>（1）控制器：  建立控制器，继承自CoreLCVC，控制器内部建立UICollectionViewFlowLayout及LTConfigModel模型并传递。<br /><br />
+>（2）视图cell：建立cell，继承自LCCell，内部实现-(void)dataFill即可。（注意cell从nib创建，nib中需要指定和类名相同的rid。）<br /><br />
+>（3）模型：    建立模型，继承自CoreListCommonModel，重写+(NSArray *)modelPrepare:方法，解析并返回列表的字典数组。<br /><br />
 
 <br /><br />
 ####使用示例：<br />
