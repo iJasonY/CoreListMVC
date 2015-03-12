@@ -18,7 +18,7 @@
  
  （1）本框架集成了没有缓存功能的TableView列表、CollectionView列表。
  
- （2）本框架依赖以下框架：CoreArchive、MJExtension、CoreHttp、CoreRefresh
+ （2）本框架依赖以下框架：CoreArchive、MJExtension、CoreHttp、CoreRefresh、CoreViewNetWorkStausManager
  
  （3）使用前，一定要清醒的认识到，父类控制器一个ViewController，他里面分别装有TableView和CollectionView，并非纯正的TableViewVC和CollectionViewVC,因为这样很难统一封装网络请求及上拉下拉加载业务。
  
